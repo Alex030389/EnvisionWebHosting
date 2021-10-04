@@ -1,0 +1,39 @@
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 0 15px;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+  transition: .3s;
+  user-select: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  /////////////////////////////////////////// type
+  &._primary {
+    color: #fff;
+    background-color: #1273eb;
+
+    &:hover {
+      color: #fff;
+      background-color: #0161cd;
+    }
+  }
+
+  /////////////////////////////////////////// size
+  &._lg {
+    max-width: 200px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  &._sm {
+    max-width: 100px;
+    height: 30px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,100 @@
+@@include('block/head.html')
+
+<main class="main">
+  <div class="container">
+    <h1>Example</h1>
+    <section>
+      <h2>Breadcumps</h2>
+      @@include('block/breadcrumb.html')
+    </section>
+
+    <hr>
+
+    <!--////////////////////////////////////////////////////// Sprite-->
+    <section>
+      <h2>Sprite svg</h2>
+      <svg aria-hidden="true" style="width:20px; height: 20px">
+        <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+      </svg>
+    </section>
+
+    <hr>
+
+    <!--/////////////////////////////////////////////////////// Buttons-->
+    <section>
+      <h2>Buttons</h2>
+      <div>
+        <button class="btn _primary _lg">
+          button
+        </button>
+        <a class="btn _primary _sm" href="#">button link</a>
+      </div>
+    </section>
+
+    <hr>
+
+    <!--/////////////////////////////////////////////////////// Link-->
+    <section>
+      <h2>Links</h2>
+      <a class="link" href="#">link</a>
+    </section>
+
+    <hr>
+
+    <!--////////////////////////////////////////////////////// Tabs-->
+    <section>
+      <h2>Tabs</h2>
+      <div class="ex-tabs" data-tabs>
+        <div class="ex-tabs__box-btn">
+          <button class="ex-tabs__btn _active" data-tabs-btn>one</button>
+          <button class="ex-tabs__btn" data-tabs-btn>two</button>
+        </div>
+        <div class="ex-tabs__box-content">
+          <div class="ex-tabs__content _active" data-tabs-content>one</div>
+          <div class="ex-tabs__content" data-tabs-content>two</div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!--//////////////////////////////////////////////// Accordion-->
+    <section>
+      <h2>Accordion</h2>
+      <div class="ex-accordion" data-accordion>
+        <div class="ex-accordion__item">
+          <button class="ex-accordion__btn" data-accordion-btn>One</button>
+          <div class="ex-accordion__text" data-accordion-text>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, repellendus.</p>
+          </div>
+        </div><!--/accordion__item-->
+        <div class="ex-accordion__item">
+          <button class="ex-accordion__btn" data-accordion-btn>Two</button>
+          <div class="ex-accordion__text" data-accordion-text>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, repellendus.</p>
+          </div>
+        </div><!--/accordion__item-->
+      </div>
+
+      <br>
+      <p>Active only one item accordion</p>
+      <div class="ex-accordion" data-accordion-2>
+        <div class="ex-accordion__item">
+          <button class="ex-accordion__btn" data-accordion-btn>One</button>
+          <div class="ex-accordion__text" data-accordion-text>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, repellendus.</p>
+          </div>
+        </div><!--/accordion__item-->
+        <div class="ex-accordion__item">
+          <button class="ex-accordion__btn" data-accordion-btn>Two</button>
+          <div class="ex-accordion__text" data-accordion-text>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, repellendus.</p>
+          </div>
+        </div><!--/accordion__item-->
+      </div>
+    </section>
+
+  </div><!--/container-->
+</main>
+
+@@include('block/scripts.html')
