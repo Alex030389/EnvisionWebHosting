@@ -1,0 +1,28 @@
+.s-about {
+  background-color: $c-accent-1;
+  padding: 95px 0;
+
+  @media (max-width: $md) {
+    padding: 44px 0;
+  }
+}
+
+.s-about__list {
+  @extend .list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px -40px;
+}
+
+.s-about__item {
+  width: calc(25% - 20px);
+  margin: 0 10px 40px;
+
+  @media (max-width: $xl) {
+    width: calc(50% - 20px);
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}

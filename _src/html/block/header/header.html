@@ -1,3 +1,48 @@
 <header class="header">
-  <div class="container">header</div>
+  <div class="header__container container">
+    <a class="header__link-logo link-logo" href="#">
+      <img class="link-logo__img" src="./design/images/logo/logo.svg" alt="logo" width="180" height="62">
+    </a>
+
+    <div class="header__nav-overlay" data-nav-overlay></div>
+
+    <nav class="header__nav-main nav-main" data-nav-main>
+      <div class="nav-main__header">
+        <a class="nav-main__link-logo link-logo" href="#">
+          <img class="link-logo__img" src="./design/images/logo/logo.svg" alt="logo" width="180" height="62">
+        </a>
+        <button class="nav-main__close-btn btn-reset" data-btn-close>
+          <svg class="nav-main__close-icon" aria-hidden="true" width="24" height="24">
+            <use xlink:href="./design/images/symbol/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="nav-main__list">
+        <li class="nav-main__item">
+          <a href="#" class="nav-main__link nav-main__link--current">Home</a>
+        </li>
+        <li class="nav-main__item">
+          <a href="#" class="nav-main__link">Web Host Review</a>
+        </li>
+        <li class="nav-main__item">
+          <a href="#" class="nav-main__link">Learning Center</a>
+        </li>
+        <li class="nav-main__item">
+          <a href="#" class="nav-main__link">Submit a Review</a>
+        </li>
+        <li class="nav-main__item">
+          <a href="#" class="nav-main__link">About Us</a>
+        </li>
+        <li class="nav-main__item">
+          <a href="#" class="nav-main__link">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="header__m-btn-open" data-btn-open>
+      <svg aria-hidden="true" width="24" height="24">
+        <use xlink:href="./design/images/symbol/sprite.svg#hamburger"></use>
+      </svg>
+    </button>
+  </div>
 </header>

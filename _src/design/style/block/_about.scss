@@ -1,0 +1,21 @@
+.about {
+
+}
+
+.about__icon {
+  width: 48px;
+  height: 48px;
+  fill: #fff;
+  margin-bottom: 22px;
+}
+
+.about__txt {
+  font-size: 26px;
+  color: #fff;
+  line-height: 1.23;
+
+  @media (max-width: $md) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}

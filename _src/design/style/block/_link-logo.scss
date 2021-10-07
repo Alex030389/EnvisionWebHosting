@@ -1,0 +1,12 @@
+.link-logo {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.link-logo__img {
+  width: 180px;
+
+  @media (max-width: $md) {
+    width: 127px;
+  }
+}

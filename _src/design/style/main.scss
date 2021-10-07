@@ -8,9 +8,10 @@
 // ///////////////////////////////////////// block
 // title
 @import "block/title/title";
+@import "block/title/title-2";
+@import "block/title/title-3";
 
 // nav
-@import "block/nav/nav-user";
 @import "block/nav/nav-main";
 
 // btn
@@ -20,16 +21,18 @@
 // link
 @import "block/link/link-stretched";
 @import "block/link/link";
+@import "block/link/link-2";
+@import "block/link/link-3";
 
 // list
 @import "block/list/list-reset";
 @import "block/list/list";
 
 // form
-@import "block/form/form";
-@import "block/form/form-group";
-@import "block/form/form-label";
-@import "block/form/form-control";
+//@import "block/form/form";
+//@import "block/form/form-group";
+//@import "block/form/form-label";
+//@import "block/form/form-control";
 
 // table
 @import "block/table/table";
@@ -38,8 +41,18 @@
 @import "block/container";
 @import "block/section";
 @import "block/header";
-@import "block/logo";
-@import "block/breadcrumbs";
+@import "block/link-logo";
+//@import "block/breadcrumbs";
+@import "block/s-agitation";
+@import "block/s-search";
+@import "block/search";
+@import "block/s-top-hosting";
+@import "block/top-hosting";
+@import "block/rank";
+@import "block/s-about";
+@import "block/about";
+@import "block/s-text";
+@import "block/txt";
 
 @import "block/footer";
 @import "block/up";

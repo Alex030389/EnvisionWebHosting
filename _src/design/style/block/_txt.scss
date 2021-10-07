@@ -1,0 +1,14 @@
+.txt {
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    @extend .title-2;
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 25px;
+  }
+}

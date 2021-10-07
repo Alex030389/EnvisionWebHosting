@@ -1,40 +1,30 @@
 //////////////////////////////////////////// Roboto
 @font-face {
-  font-weight: 700;
-  font-family: Roboto;
-  font-style: normal;
-
-  font-display: swap;
-  src: url(../font/Roboto/Roboto-Bold.woff2),
-  url(../font/Roboto/Roboto-Bold.woff);
-}
-
-@font-face {
   font-weight: 400;
-  font-family: Roboto;
+  font-family: GothamPro;
   font-style: normal;
 
   font-display: swap;
-  src: url(../font/Roboto/Roboto-Regular.woff2),
-  url(../font/Roboto/Roboto-Regular.woff);
+  src: url(../font/GothamPro/GothamPro.woff2),
+  url(../font/GothamPro/GothamPro.woff);
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: GothamPro;
+  font-style: normal;
+
+  font-display: swap;
+  src: url(../font/GothamPro/GothamPro-Medium.woff2),
+  url(../font/GothamPro/GothamPro-Medium.woff);
 }
 
 @font-face {
   font-weight: 700;
-  font-family: Roboto;
+  font-family: GothamPro;
   font-style: normal;
 
   font-display: swap;
-  src: url(../font/Roboto/Roboto-Bold.woff2),
-  url(../font/Roboto/Roboto-Bold.woff);
-}
-
-@font-face {
-  font-weight: 700;
-  font-family: Roboto;
-  font-style: italic;
-
-  font-display: swap;
-  src: url(../font/Roboto/Roboto-BoldItalic.woff2),
-  url(../font/Roboto/Roboto-BoldItalic.woff);
+  src: url(../font/GothamPro/GothamPro-Bold.woff2),
+  url(../font/GothamPro/GothamPro-Bold.woff);
 }

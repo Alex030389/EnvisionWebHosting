@@ -1,6 +1,14 @@
 .list {
   @extend .list-reset;
+
 }
 
 .list__item {
+  padding-left: 30px;
+  background: url("../images/icon/check.svg")  left top no-repeat;
+  background-size: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
 }

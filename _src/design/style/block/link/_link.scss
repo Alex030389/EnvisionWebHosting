@@ -1,11 +1,11 @@
 .link {
-  color: blue;
-  border-bottom: 1px solid rgba($c-main, .3);
+  color: $c-accent-1;
+  box-shadow: inset 0px -1px 0px 0px rgba($c-accent-1, .5);
   transition: .2s;
 
   &:hover {
-    color: black;
+    color: #4E6BD1;
     text-decoration: none;
-    border-color: rgba($c-main, 1);
+    box-shadow: inset 0px -1px 0px 0px rgba(#4E6BD1, 1);
   }
 }

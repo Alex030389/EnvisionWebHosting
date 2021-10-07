@@ -10,7 +10,7 @@ body {
   color: $c-main;
   // overflow-x: hidden;
 
-  &._fixed {
+  &.fixed {
     overflow-y: hidden;
   }
 }

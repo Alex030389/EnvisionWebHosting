@@ -1,2 +1,17 @@
 .title {
+  font-size: 60px;
+  line-height: 1.13;
+  font-weight: 500;
+  color: $c-secondary;
+
+  @media (max-width: $xl) {
+    font-size: 40px;
+    line-height: 1.20;
+  }
+  
+  br {
+    @media (max-width: $xs) {
+      display: none;
+    }
+  }
 }

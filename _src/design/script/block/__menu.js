@@ -1,38 +1,36 @@
 //////////////////////////////////////////// menu
 (() => {
-
-  if (document.querySelector('[data-btn-open-menu]')) {
-    const btnOpenMenu = document.querySelector('[data-btn-open-menu]');
-    const mNav = document.querySelector('[data-m-nav]');
-    const mNavBox = document.querySelector('[data-m-nav-box]');
+  if (document.querySelector('[data-btn-open]')) {
+    const btnOpenNav = document.querySelector('[data-btn-open]');
+    const btnCloseNav = document.querySelector('[data-btn-close]');
+    const mNavOverlay = document.querySelector('[data-nav-overlay]');
+    const mNav = document.querySelector('[data-nav-main]');
     const body = document.querySelector('body');
-    const btnCloseNav = document.querySelector('[data-btn-close-menu]');
 
     const openMNav = () => {
       body.classList.add('fixed');
-      mNav.classList.add('_active');
-      mNavBox.classList.add('_active');
+      mNavOverlay.classList.add('header__nav-overlay--active');
+      mNav.classList.add('header__nav-main--active');
     };
 
     const closeMNav = () => {
       body.classList.remove('fixed');
-      mNav.classList.remove('_active');
-      mNavBox.classList.remove('_active');
+      mNavOverlay.classList.remove('header__nav-overlay--active');
+      mNav.classList.remove('header__nav-main--active');
     };
 
-    btnOpenMenu.addEventListener('click', () => {
+    btnOpenNav.addEventListener('click', () => {
       openMNav();
-    });
-
-    mNav.addEventListener('click', (evt) => {
-      if (evt.target === mNav) {
-        closeMNav()
-      }
     });
 
     btnCloseNav.addEventListener('click', () => {
       closeMNav();
     });
-  }
 
+    mNavOverlay.addEventListener('click', (evt) => {
+      if (evt.target === mNavOverlay) {
+        closeMNav()
+      }
+    });
+  }
 })();

@@ -1,0 +1,17 @@
+.rank {
+  display: flex;
+  align-items: center;
+}
+
+.rank__icon {
+  fill: $c-accent-2;
+  width: 48px;
+  height: 48px;
+  margin-right: 13px;
+}
+
+.rank__value {
+  font-size: 26px;
+  color: $c-accent-2;
+  font-weight: 700;
+}

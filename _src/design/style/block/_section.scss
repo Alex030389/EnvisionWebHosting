@@ -1,2 +1,12 @@
 .section {
+  padding: 0 0 120px;
+
+  @media (max-width: $md) {
+    margin-top: -27px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $ss) {
+    margin-top: -60px;
+  }
 }
