@@ -1,0 +1,67 @@
+.best-hosting {
+  padding: 0 35px 72px;
+  background-color: #FAFDFF;
+  position: relative;
+  border: 1px solid #EFF1FA;
+}
+
+.best-hosting__wrap-img {
+  margin: 0 -35px 30px;
+  
+  @media (max-width: $md) {
+    margin-bottom: 8px;
+  }
+}
+
+.best-hosting__img {
+
+}
+
+.best-hosting__box-title-rang {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+    margin-bottom: 6px;
+  }
+}
+
+.best-hosting__title {
+  margin-right: 20px;
+
+  @media (max-width: $md) {
+    font-size: 26px;
+  }
+
+  @media (max-width: $sm) {
+    order: 1;
+  }
+}
+
+.best-hosting__rank {
+  @media (max-width: $sm) {
+    align-self: flex-end;
+    margin-bottom: 4px;
+  }
+}
+
+.best-hosting__rating {
+  font-weight: 500;
+  color: $c-accent-1;
+  margin-bottom: 12px;
+}
+
+.best-hosting__desc {
+  line-height: 1.5;
+}
+
+.best-hosting__link {
+  font-weight: 500;
+  position: absolute;
+  bottom: 32px;
+  right: 35px;
+  line-height: 1.1;
+}

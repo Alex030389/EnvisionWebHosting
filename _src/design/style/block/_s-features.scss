@@ -1,0 +1,37 @@
+.s-features {
+  background-color: #EFF1FA;
+  padding: 76px 0;
+
+  @media (max-width: $md) {
+    padding: 36px 0;
+  }
+}
+
+.s-features__container {
+  display: flex;
+  justify-content: center;
+}
+
+.s-features__list {
+  @extend .list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px -40px;
+  max-width: 1414px;
+  width: 100%;
+
+  @media (max-width: $md) {
+    margin: 0 0 -20px;
+  }
+}
+
+.s-features__item {
+  margin: 0 20px 40px;
+  width: calc(50% - 40px);
+
+  @media (max-width: $md) {
+    margin: 0 0 40px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

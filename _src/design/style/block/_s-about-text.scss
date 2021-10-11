@@ -1,0 +1,7 @@
+.s-about-text {
+  padding-bottom: 80px;
+
+  @media (max-width: $md) {
+    padding-bottom: 30px;
+  }
+}

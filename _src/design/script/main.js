@@ -26,6 +26,7 @@ svg4everybody();
 // @include('./block/__checkboxes.js')
 //@@include('./block/__btn-blur.js')
 @@include('./block/__show-all-host-item.js')
+@@include('./block/__show-all-best-host-item.js')
 @@include('./block/__show-all-text.js')
 // @include('./block/__scroll-to-anchor.js')
 @@include('./block/__scroll-to-top.js')

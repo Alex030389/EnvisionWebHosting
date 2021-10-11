@@ -1,0 +1,9 @@
+.link-4 {
+  color: $c-main;
+  transition: .2s;
+
+  &:hover {
+    color: $c-accent-1;
+    text-decoration: none;
+  }
+}

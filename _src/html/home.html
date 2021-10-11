@@ -1,112 +1,20 @@
-@@include('block/head.html')
+@@include('block/head.html', {'title': 'Home'})
 @@include('block/header/header.html')
 
 <main class="main">
-  <!-- ////////////////////////////////////////////////////////// s-agitation -->
-  <section class="s-agitation s-agitation--home">
-    <div class="s-agitation__container container">
-      <h1 class="s-agitation__title title">Top Best Hosting<br> Companies: Best price.<br> Best Value</h1>
-    </div>
-  </section>
+  @@include('block/s-agitation.html', {
+    "title": "Top Best Hosting Companies: Best price. Best Value",
+    "class": "s-agitation--home",
+  })
 
-  <!--//////////////////////////////////////////////////////////// s-search-->
-  <section class="s-search">
-    <div class="container">
-      <form class="s-search__search search" action="#">
-        <p class="search__title">Search Perfect Web Hosting</p>
-        <div class="search__group">
-          <svg class="search__icon" aria-hidden="true" width="24" height="24">
-            <use xlink:href="./design/images/symbol/sprite.svg#search"></use>
-          </svg>
-          <label class="visually-hidden" for="search-control">Search Hosting</label>
-          <input class="search__control" id="search-control" placeholder="Search" type="text">
-          <button class="search__btn">Search Now</button>
-        </div>
-      </form>
-    </div>
-  </section>
+  @@include('block/s-top-hosting.html')
 
-  <!--/////////////////////////////////////////////////////////// s-top-hosting-->
-  <section class="s-top-hosting section">
-    <div class="container">
-      <h2 class="s-top-hosting__title title-2">Top Best Hosting</h2>
-      <ul class="s-top-hosting__list">
-        @@for (var i = 0; i < 12; i++) {
-        <li class="s-top-hosting__item top-hosting" data-host-item>
-          <div class="top-hosting__rank rank">
-            <svg class="rank__icon" aria-hidden="true" width="20" height="20">
-              <use xlink:href="./design/images/symbol/sprite.svg#star"></use>
-            </svg>
-            <span class="rank__value">1</span>
-          </div>
-          <div class="top-hosting__price">$6.95</div>
-          <h3 class="top-hosting__title title-3">
-            <a class="link" href="#">InMotion</a>
-          </h3>
-          <p class="top-hosting__desc">#1 Business Web Host</p>
-          <p class="top-hosting__limit">Disk Space & Bandwidth - Unlimited</p>
-          <p class="top-hosting__score">Score - 99%</p>
-          <ul class="top-hosting__features-list list">
-            <li class="list__item">99.9% Uptime</li>
-            <li class="list__item">Free Setup and Domain</li>
-            <li class="list__item">SPAM Safe™ Email</li>
-          </ul>
-          <a class="top-hosting__link link-2" href="#">InMotion Review</a>
-        </li>
-        }
-      </ul>
-      <div class="s-top-hosting__wrap-btn">
-        <button class="s-top-hosting__btn btn" data-host-btn>Show More</button>
-      </div>
-    </div>
-  </section>
+  @@include('block/s-about.html')
 
-  <!--////////////////////////////////////////////////////////// -->
-  <section class="s-about">
-    <div class="container">
-      <ul class="s-about__list">
-        <li class="s-about__item about">
-          <svg class="about__icon" aria-hidden="true" width="48" height="48">
-            <use xlink:href="./design/images/symbol/sprite.svg#book"></use>
-          </svg>
-          <div class="about__txt">
-            Want to do some homework first? Learn all about web hosting in our <a class="link-3" href="#">learning
-            center</a>
-          </div>
-        </li>
-        <li class="s-about__item about">
-          <svg class="about__icon" aria-hidden="true" width="48" height="48">
-            <use xlink:href="./design/images/symbol/sprite.svg#settings"></use>
-          </svg>
-          <div class="about__txt">
-            Learn about online marketing with <a class="link-3" href="#">Search Engine Optimization</a>
-          </div>
-        </li>
-        <li class="s-about__item about">
-          <svg class="about__icon" aria-hidden="true" width="48" height="48">
-            <use xlink:href="./design/images/symbol/sprite.svg#server"></use>
-          </svg>
-          <div class="about__txt">
-            Need the ultimate in web hosting? Read about <a class="link-3" href="#">Dedicated Servers</a>
-          </div>
-        </li>
-        <li class="s-about__item about">
-          <svg class="about__icon" aria-hidden="true" width="48" height="48">
-            <use xlink:href="./design/images/symbol/sprite.svg#user"></use>
-          </svg>
-          <div class="about__txt">
-            Looking for a great domain name? Read about <a class="link-3" href="#">Domain Registration</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!--/////////////////////////////////////////////////////////////////// s-text-->
+  <!--/////////////////////////////////////////////////////////// s-text-->
   <section class="s-text">
     <div class="container">
       <div class="s-text__txt txt" data-hidden-text>
-        <h2>Web Hosting Reviews: top web hosting companies reviewed</h2>
         <p>More than five years in the making, Envision Web Hosting is a collection of web hosting provider reviews,
           articles on doing business online and internet society, and a new resource for existing online businesses to
           take advantage of the changing scope of the Search Engine Marketing climate.</p>

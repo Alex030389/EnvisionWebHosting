@@ -1,11 +1,15 @@
 .s-agitation {
-  height: 660px;
+  height: 668px;
   padding-top: 50px;
   background-color: #EFF1FA;
   background-repeat: no-repeat;
+  margin-bottom: 230px;
+  position: relative;
+  //overflow: hidden;
 
   @media (max-width: $md) {
     height: 680px;
+    margin-bottom: 132px;
   }
 
   &--home {
@@ -37,14 +41,87 @@
 
     @media (max-width: $ss) {
       background-position: 15px 68%;
-      //background-size: 370px;
+    }
+  }
+
+  &--partners {
+    background-image: url("../images/ui/agitation/partners.png");
+    background-position: 83% center;
+
+    @media (max-width: 1600px) {
+      background-position: 98% center;
+    }
+
+    @media (max-width: $sl) {
+      background-size: 40%;
+    }
+
+    @media (max-width: $xl) {
+      padding-top: 102px;
+      background-position: center 58%;
+      background-size: 435px;
+    }
+
+    @media (max-width: $md) {
+      background-position: center 72%;
+    }
+
+    @media (max-width: $sm) {
+      background-size: 380px;
+      background-position: center 72%;
+    }
+
+    @media (max-width: $xs) {
+      background-position: -20px 72%;
+    }
+
+    @media (max-width: $ss) {
+      background-position: -50px 65%;
+    }
+  }
+
+  &--learning-center {
+    background-image: url("../images/ui/agitation/learning-center.png");
+    background-position: 98% 70px;
+    background-size: 717px;
+
+    @media (max-width: 1600px) {
+      background-position: 120% center;
+    }
+
+    @media (max-width: $sl) {
+      background-size: 40%;
+    }
+
+    @media (max-width: $xl) {
+      background-position: center 68%;
+      background-size: 328px;
+    }
+
+    @media (max-width: $md) {
+      background-position: center 74%;
+      height: 720px;
+
+      .s-agitation__subtitle {
+        font-size: 16px;
+        padding-top: 13px;
+      }
+    }
+
+    @media (max-width: $sm) {
+      background-position: center 78%;
+    }
+
+    @media (max-width: $xs) {
+      background-position: center 80%;
+      background-size: 80%;
+      height: 790px;
+    }
+
+    @media (max-width: $ss) {
     }
   }
 }
-
-
-
-
 
 .s-agitation__container {
   height: 100%;
@@ -56,6 +133,28 @@
   }
 }
 
-.s-agitation__title {
+.s-agitation__text {
+  max-width: 767px;
+  margin-bottom: 50px;
+  width: 100%;
+}
 
+.s-agitation__title {
+  margin-bottom: 0;
+}
+
+.s-agitation__subtitle {
+  padding-top: 24px;
+  font-size: 20px;
+  color: $c-secondary;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.s-agitation__search {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translate(-50%, 50%);
 }

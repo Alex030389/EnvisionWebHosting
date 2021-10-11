@@ -1,0 +1,59 @@
+.feature {
+  background-color: $c-accent-1;
+  padding: 45px 36px 62px;
+
+  @media (max-width: $lg) {
+    padding: 26px 16px 20px;
+  }
+}
+
+.features__title {
+  position: relative;
+  padding-left: 70px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    padding-left: 60px;
+  }
+
+  svg {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    fill: #fff;
+    width: 48px;
+    height: 48px;
+
+    @media (max-width: $lg) {
+      top: -6px;
+    }
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+
+    @media (max-width: $lg) {
+      font-size: 28px;
+    }
+  }
+}
+
+.features__list {
+  @extend .list-reset;
+
+}
+
+.features__item {
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
+
+.features__link {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+}

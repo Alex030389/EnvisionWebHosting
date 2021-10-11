@@ -1,0 +1,24 @@
+.s-link-reviews {
+  padding-bottom: 120px;
+
+  @media (max-width: $md) {
+    padding-bottom: 60px;
+  }
+}
+
+.s-link-reviews__box-link {
+  box-shadow: 0 25px 50px rgba(8, 18, 44, 0.1);
+  padding: 58px;
+  line-height: 1.4;
+  max-width: 913px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (max-width: $md) {
+    padding: 14px 30px;
+    font-size: 20px;
+  }
+}

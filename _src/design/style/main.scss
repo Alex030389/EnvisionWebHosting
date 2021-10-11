@@ -23,6 +23,7 @@
 @import "block/link/link";
 @import "block/link/link-2";
 @import "block/link/link-3";
+@import "block/link/link-4";
 
 // list
 @import "block/list/list-reset";
@@ -39,12 +40,12 @@
 
 // ather
 @import "block/container";
-@import "block/section";
+//@import "block/section";
 @import "block/header";
 @import "block/link-logo";
 //@import "block/breadcrumbs";
 @import "block/s-agitation";
-@import "block/s-search";
+//@import "block/s-search";
 @import "block/search";
 @import "block/s-top-hosting";
 @import "block/top-hosting";
@@ -53,6 +54,13 @@
 @import "block/about";
 @import "block/s-text";
 @import "block/txt";
+@import "block/best-hosting";
+@import "block/s-about-text";
+@import "block/s-features";
+@import "block/feature";
+@import "block/s-best-hosting";
+@import "block/s-link-reviews";
+@import "block/s-box-link";
 
 @import "block/footer";
 @import "block/up";

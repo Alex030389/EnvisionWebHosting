@@ -1,0 +1,35 @@
+<!--/////////////////////////////////////////////////////////// s-best-hosting-->
+<section class="s-best-hosting">
+  <div class="container">
+    <h2 class="s-best-hosting__title title-2">Top Best Hosting</h2>
+    <ul class="s-best-hosting__list">
+      @@for (var i = 0; i < 12; i++) {
+      <li class="s-best-hosting__item best-hosting" data-host-item>
+        <div class="best-hosting__wrap-img">
+          <img class="best-hosting__img" src="./design/images/hosting/1.jpg" width="511" height="179" alt="img">
+        </div>
+        <div class="best-hosting__box-title-rang">
+          <h3 class="best-hosting__title title-3">
+            <a class="link" href="#">InMotion Hosting</a>
+          </h3>
+          <div class="best-hosting__rank rank">
+            <svg class="rank__icon" aria-hidden="true" width="20" height="20">
+              <use xlink:href="./design/images/symbol/sprite.svg#star"></use>
+            </svg>
+            <span class="rank__value">1</span>
+          </div>
+        </div>
+        <div class="best-hosting__rating">Rating 9.9</div>
+        <div class="best-hosting__desc">
+          InMotion web hosting is high-powered and high-quality. This company delivers fast and reliable service that
+          is sure to impress...
+        </div>
+        <a class="best-hosting__link link-2" href="#">Read Our Review</a>
+      </li>
+      }
+    </ul>
+    <div class="s-best-hosting__wrap-btn">
+      <button class="s-best-hosting__btn btn" data-best-host-btn>Show More</button>
+    </div>
+  </div>
+</section>

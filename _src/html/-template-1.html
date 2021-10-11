@@ -1,14 +1,16 @@
-@@include('block/head.html')
+@@include('block/head.html',{'title': 'Partners'})
 @@include('block/header/header.html')
 
 <main class="main">
-  <!-- ////////////////////////////////////////////////////////// agitation -->
-  <section class="section">
-    <div class="container">
-      <p>Home</p>
+  @@include('block/s-agitation.html', {
+  'title': '',
+  'class': 's-agitation--home',
+  })
 
-    </div><!--/container-->
-  </section>
+  <!--@include('block/s-top-hosting.html')-->
+
+  <!--@include('block/s-about.html')-->
+
 </main>
 
 @@include('block/footer/footer.html')

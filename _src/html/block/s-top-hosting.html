@@ -1,0 +1,34 @@
+<!--/////////////////////////////////////////////////////////// s-top-hosting-->
+<section class="s-top-hosting">
+  <div class="container">
+    <h2 class="s-top-hosting__title title-2">Top Best Hosting</h2>
+    <ul class="s-top-hosting__list">
+      @@for (var i = 0; i < 12; i++) {
+      <li class="s-top-hosting__item top-hosting" data-host-item>
+        <div class="top-hosting__rank rank">
+          <svg class="rank__icon" aria-hidden="true" width="20" height="20">
+            <use xlink:href="./design/images/symbol/sprite.svg#star"></use>
+          </svg>
+          <span class="rank__value">1</span>
+        </div>
+        <div class="top-hosting__price">$6.95</div>
+        <h3 class="top-hosting__title title-3">
+          <a class="link" href="#">InMotion</a>
+        </h3>
+        <p class="top-hosting__desc">#1 Business Web Host</p>
+        <p class="top-hosting__limit">Disk Space & Bandwidth - Unlimited</p>
+        <p class="top-hosting__score">Score - 99%</p>
+        <ul class="top-hosting__features-list list">
+          <li class="list__item">99.9% Uptime</li>
+          <li class="list__item">Free Setup and Domain</li>
+          <li class="list__item">SPAM Safe™ Email</li>
+        </ul>
+        <a class="top-hosting__link link-2" href="#">InMotion Review</a>
+      </li>
+      }
+    </ul>
+    <div class="s-top-hosting__wrap-btn">
+      <button class="s-top-hosting__btn btn" data-host-btn>Show More</button>
+    </div>
+  </div>
+</section>
